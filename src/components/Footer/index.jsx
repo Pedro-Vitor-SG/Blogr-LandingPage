@@ -12,23 +12,23 @@ function Footer() {
           <p>
             <strong>Product</strong>
           </p>
-          <a href="#">Overview</a> <a href="#">Pricing</a>
-          <a href="#">Marketplace</a> <a href="#">Features</a>
-          <a href="#">Integrations</a>
+          <a href="/">Overview</a> <a href="/">Pricing</a>
+          <a href="/">Marketplace</a> <a href="/">Features</a>
+          <a href="/">Integrations</a>
         </div>
         <div>
           <p>
             <strong>Company</strong>
           </p>{" "}
-          <a href="#">About</a> <a href="#">Team</a> <a href="#">Blog</a>{" "}
-          <a href="#">Careers</a>
+          <a href="/">About</a> <a href="/">Team</a> <a href="/">Blog</a>{" "}
+          <a href="/">Careers</a>
         </div>
         <div>
           <p>
             <strong>Connect</strong>
           </p>{" "}
-          <a href="#">Contact</a> <a href="#">Newsletter</a>{" "}
-          <a href="#">LinkedIn</a>
+          <a href="/">Contact</a> <a href="/">Newsletter</a>{" "}
+          <a href="/">LinkedIn</a>
         </div>
       </section>
     </Container>

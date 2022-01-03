@@ -33,68 +33,68 @@ function Header() {
       <nav className={btnMobile ? "active" : ""}>
         <ul className="nav_list">
           <li>
-            <a href="#">
+            <a href="/">
               Product <img src={btnMobile  ? arrowMobile : arrow} alt="arrow" />
             </a>
 
             <ul className="dp_list">
               <li>
-                <a href="#">Overview</a>
+                <a href="/">Overview</a>
               </li>
               <li>
-                <a href="#">Pricing</a>
+                <a href="/">Pricing</a>
               </li>
               <li>
-                <a href="#">Marketplace</a>
+                <a href="/">Marketplace</a>
               </li>
               <li>
-                <a href="#">Features</a>
+                <a href="/">Features</a>
               </li>
               <li>
-                <a href="#">Integrations</a>
+                <a href="/">Integrations</a>
               </li>
             </ul>
           </li>
           <li>
-            <a href="#">
+            <a href="/">
               Company <img src={btnMobile ? arrowMobile : arrow} alt="arrow" />
             </a>
             <ul className="dp_list">
               <li>
-                <a href="#">About</a>
+                <a href="/">About</a>
               </li>
               <li>
-                <a href="#">Team</a>
+                <a href="/">Team</a>
               </li>
               <li>
-                <a href="#">Blog</a>
+                <a href="/">Blog</a>
               </li>
               <li>
-                <a href="#">Carees</a>
+                <a href="/">Carees</a>
               </li>
               <li></li>
             </ul>
           </li>
           <li>
-            <a href="#">
+            <a href="/">
               Connect <img src={btnMobile ? arrowMobile : arrow} alt="arrow" />
             </a>
             <ul className="dp_list">
               <li>
-                <a href="#">Contact</a>
+                <a href="/">Contact</a>
               </li>
               <li>
-                <a href="#">Newsletter</a>
+                <a href="/">Newsletter</a>
               </li>
               <li>
-                <a href="#">LinkedIn</a>
+                <a href="/">LinkedIn</a>
               </li>
             </ul>
           </li>
         </ul>
 
         <section className="links">
-          <a className="btn_f" href="#">Login</a> <a className="btn_s" href="#">Sign Up</a>
+          <a className="btn_f" href="/">Login</a> <a className="btn_s" href="/">Sign Up</a>
         </section>
       </nav>
 
@@ -105,9 +105,9 @@ function Header() {
 
       <section className="buttons_start_learn">
         
-          <a className="first" href="#">Start for Free</a>
+          <a className="first" href="/">Start for Free</a>
         
-          <a className="second" href="#">Learn More</a>
+          <a className="second" href="/">Learn More</a>
       
       </section> 
     </Container>
