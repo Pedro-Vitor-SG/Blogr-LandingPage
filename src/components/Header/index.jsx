@@ -1,72 +1,117 @@
-import React from "react";
-import logo from "../../assets/logo.svg";
-
+import React, { useState } from "react";
 import { Container } from "./index.styles";
 
-const Header = () => {
+import logo from "../../assets/logo.svg";
+import icon_hamburger from "../../assets/icon-hamburger.svg";
+import icon_close from "../../assets/icon-close.svg";
+import arrow from "../../assets/icon-arrow-light.svg";
+import arrowMobile from "../../assets/icon-arrow-dark.svg";
+
+function Header() {
+  const [btnMobile, setButtonMobile] = useState(false);
+  const handleButton = () => {
+    setButtonMobile(!btnMobile);
+  };
+
+  
+
   return (
     <Container>
-      <img src={logo} alt="Logo Blogr" />
+      <div className="logo_btnMobile">
+        <a href="/">
+          <img src={logo} alt="logo blogr" />
+        </a>
+        <button onClick={handleButton}>
+          {btnMobile ? (
+            <img src={icon_close} alt="close nav" />
+          ) : (
+            <img src={icon_hamburger} alt="open nav" />
+          )}
+        </button>
+      </div>
 
-      <nav>
-        <ul className="main_list">
-          <li className="item">
-            Product
-            <ul className="dropdown">
-              <li>Product</li>
-              <li> Overview </li>
-              <li>Pricing </li>
-              <li>Marketplace</li>
-              <li> Features </li>
-              <li>Integrations</li>
+      <nav className={btnMobile ? "active" : ""}>
+        <ul className="nav_list">
+          <li>
+            <a href="#">
+              Product <img src={btnMobile  ? arrowMobile : arrow} alt="arrow" />
+            </a>
+
+            <ul className="dp_list">
+              <li>
+                <a href="#">Overview</a>
+              </li>
+              <li>
+                <a href="#">Pricing</a>
+              </li>
+              <li>
+                <a href="#">Marketplace</a>
+              </li>
+              <li>
+                <a href="#">Features</a>
+              </li>
+              <li>
+                <a href="#">Integrations</a>
+              </li>
             </ul>
           </li>
-
           <li>
-            Company
-            <ul className="dropdown">
-              <li>Company</li>
-              <li> About </li>
-              <li>Team</li>
-              <li> Blog</li>
-              <li> Careers </li>
-              <li>Connect</li>
+            <a href="#">
+              Company <img src={btnMobile ? arrowMobile : arrow} alt="arrow" />
+            </a>
+            <ul className="dp_list">
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Team</a>
+              </li>
+              <li>
+                <a href="#">Blog</a>
+              </li>
+              <li>
+                <a href="#">Carees</a>
+              </li>
+              <li></li>
             </ul>
           </li>
-
           <li>
-            Contact
-            <ul className="dropdown">
-              <li>Contact</li>
-
-              <li>Newsletter</li>
-              <li>LinkedIn</li>
+            <a href="#">
+              Connect <img src={btnMobile ? arrowMobile : arrow} alt="arrow" />
+            </a>
+            <ul className="dp_list">
+              <li>
+                <a href="#">Contact</a>
+              </li>
+              <li>
+                <a href="#">Newsletter</a>
+              </li>
+              <li>
+                <a href="#">LinkedIn</a>
+              </li>
             </ul>
           </li>
         </ul>
 
-        <div className="buttons">
-          <button>
-            <a href="/">Login</a>
-          </button>{" "}
-          <button className="second">
-            <a href="/">Sign Up</a>
-          </button>
-        </div>
+        <section className="links">
+          <a className="btn_f" href="#">Login</a> <a className="btn_s" href="#">Sign Up</a>
+        </section>
       </nav>
 
-      <section>
-        <h1>A modern publishing platform</h1>
-        <p> Grow your audience and build your online brand</p>
-        <button className="btn_one">
-          <a href="/">Start for Free</a>
-        </button>{" "}
-        <button className="btn_two">
-          <a href="/">Learn More</a>
-        </button>
+       <section className="texts_header">
+        <h1> A modern publishing platform</h1>
+        <p>Grow your audience and build your online brand</p>
       </section>
+
+      <section className="buttons_start_learn">
+        
+          <a className="first" href="#">Start for Free</a>
+        
+          <a className="second" href="#">Learn More</a>
+      
+      </section> 
     </Container>
   );
-};
+}
 
 export default Header;

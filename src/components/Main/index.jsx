@@ -1,20 +1,23 @@
 import React from "react";
+import phoneDesktop from "../../assets/illustration-phones.svg";
+
+import editorMobile from "../../assets/illustration-editor-mobile.svg";
 
 import { Container } from "./index.styles";
+function Main() {
 
-import imgPhones from "../../assets/illustration-phones.svg";
+  const width = window.screen.width;
 
 
-const Main = () => {
   return (
     <Container>
+      <section className="section_first">
+        <h1>Designed for the future</h1>
 
-      <section className="introducion">
-      <h1> Designed for the future</h1>
-
-        <div className="texts">
+        {width < 991 ? <img src={editorMobile} alt="illustration-editor-mobile"/> : ''}
+        
+        <div>
           <h2>Introducing an extensible editor</h2>
-          
           <p>
             Blogr features an exceedingly intuitive interface which lets you
             focus on one thing: creating content. The editor supports management
@@ -23,6 +26,8 @@ const Main = () => {
             provide easy ways to add functionality or change the looks of a
             blog.
           </p>
+        </div>
+        <div>
           <h2>Robust content management</h2>
           <p>
             Flexible content management enables users to easily move through
@@ -33,12 +38,10 @@ const Main = () => {
         </div>
       </section>
 
-      <section className="state">
-        <div className="img">
-          <img src={imgPhones} alt="illustration phones" />
-        </div>
-        <div className="texts">
-          <h2> State of the Art Infrastructure</h2>
+      <section className="section_second">
+        <img src={phoneDesktop} alt="illustraton-Phone" />
+        <div>
+          <h2>State of the Art Infrastructure</h2>
           <p>
             With reliability and speed in mind, worldwide data centers provide
             the backbone for ultra-fast connectivity. This ensures your site
@@ -47,11 +50,9 @@ const Main = () => {
           </p>
         </div>
       </section>
-
-      <section className="free_open_simple">
-       
+      <section className="section_third">
         <div className="texts">
-          <h2>Free, open, simple</h2>
+          <h2> Free, open, simple</h2>
           <p>
             Blogr is a free and open source application backed by a large
             community of helpful developers. It supports features such as code
@@ -60,7 +61,6 @@ const Main = () => {
             Analytics. The architecture is clean and is relatively easy to
             learn.
           </p>
-
           <h2>Powerful tooling</h2>
           <p>
             Batteries included. We built a simple and straightforward CLI tool
@@ -71,6 +71,6 @@ const Main = () => {
       </section>
     </Container>
   );
-};
+}
 
 export default Main;
