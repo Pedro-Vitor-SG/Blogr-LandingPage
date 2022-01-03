@@ -30,36 +30,43 @@ export const Container = styled.header`
     list-style: none;
     display: inline-block;
   }
-  nav .nav_list li {
-    margin-right: 2rem;
+  nav .nav_list > li {
+    margin-right: 3rem;
     position: relative;
+    color: rgba(255,255,255, .7);
     display: inline-block;
   }
+ nav .nav_list > li:hover {
+   cursor: pointer;
+   text-decoration: underline;
+   color: rgba(255,255,255, 1);
 
-  nav .nav_list li a {
+ }
+
+  nav .nav_list li  .dp_list a {
     text-decoration: none;
     color: var(--neutral-white);
-    opacity: 0.7;
     font-weight: bold;
     transition: 0.2s;
   }
-  nav .nav_list li a:hover {
+  nav .nav_list li .dp_list a:hover {
     text-decoration: underline;
     opacity: 1;
     font-weight: bold;
   }
-  nav .nav_list li a img {
+  nav .nav_list li  img {
     margin-left: 5px;
     transition: 0.2s;
   }
-  nav .nav_list li a:hover img {
+  nav .nav_list li:hover img {
     transform: rotate(180deg);
   }
   nav .nav_list li .dp_list {
     list-style: none;
     position: absolute;
     background-color: var(--neutral-white);
-    left: -20px;
+    left: -10px;
+    opacity: 1;
     width: 13vw;
     border-radius: 5px;
     padding: 1rem 1.5rem 0px;

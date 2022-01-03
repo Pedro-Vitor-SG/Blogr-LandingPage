@@ -13,8 +13,6 @@ function Header() {
     setButtonMobile(!btnMobile);
   };
 
-  
-
   return (
     <Container>
       <div className="logo_btnMobile">
@@ -33,10 +31,7 @@ function Header() {
       <nav className={btnMobile ? "active" : ""}>
         <ul className="nav_list">
           <li>
-            <a href="/">
-              Product <img src={btnMobile  ? arrowMobile : arrow} alt="arrow" />
-            </a>
-
+            Product <img src={btnMobile ? arrowMobile : arrow} alt="arrow" />
             <ul className="dp_list">
               <li>
                 <a href="/">Overview</a>
@@ -56,9 +51,7 @@ function Header() {
             </ul>
           </li>
           <li>
-            <a href="/">
-              Company <img src={btnMobile ? arrowMobile : arrow} alt="arrow" />
-            </a>
+            Company <img src={btnMobile ? arrowMobile : arrow} alt="arrow" />
             <ul className="dp_list">
               <li>
                 <a href="/">About</a>
@@ -76,9 +69,7 @@ function Header() {
             </ul>
           </li>
           <li>
-            <a href="/">
-              Connect <img src={btnMobile ? arrowMobile : arrow} alt="arrow" />
-            </a>
+            Connect <img src={btnMobile ? arrowMobile : arrow} alt="arrow" />
             <ul className="dp_list">
               <li>
                 <a href="/">Contact</a>
@@ -94,22 +85,29 @@ function Header() {
         </ul>
 
         <section className="links">
-          <a className="btn_f" href="/">Login</a> <a className="btn_s" href="/">Sign Up</a>
+          <a className="btn_f" href="/">
+            Login
+          </a>{" "}
+          <a className="btn_s" href="/">
+            Sign Up
+          </a>
         </section>
       </nav>
 
-       <section className="texts_header">
+      <section className="texts_header">
         <h1> A modern publishing platform</h1>
         <p>Grow your audience and build your online brand</p>
       </section>
 
       <section className="buttons_start_learn">
-        
-          <a className="first" href="/">Start for Free</a>
-        
-          <a className="second" href="/">Learn More</a>
-      
-      </section> 
+        <a className="first" href="/">
+          Start for Free
+        </a>
+
+        <a className="second" href="/">
+          Learn More
+        </a>
+      </section>
     </Container>
   );
 }
