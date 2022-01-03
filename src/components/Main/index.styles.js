@@ -147,7 +147,36 @@ export const Container = styled.main`
       font-size: 0.8rem;
       line-height: 28px;
       opacity: 0.8;
+      line-height: 25px;
     }
+    .section_third {
+    padding: 0rem 0px;
+    background: none;
+    background-size: none;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section_third img{
+    width: 140%;
+  }
+  .section_third div {
+    width: 100%;
+    text-align: center;
+   padding: 0px 1.3rem;
+   margin-top: 2rem;
+  }
+  .section_third div h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+  }
+  .section_third div p {
+    line-height: 25px;
+    font-size: .9rem;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
   }
   @media (min-width: 480px) and (max-width: 991px){
     .section_second img {

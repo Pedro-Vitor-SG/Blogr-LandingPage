@@ -2,7 +2,7 @@ import React from "react";
 import phoneDesktop from "../../assets/illustration-phones.svg";
 
 import editorMobile from "../../assets/illustration-editor-mobile.svg";
-
+import laptopMobile from "../../assets/illustration-laptop-mobile.svg"
 import { Container } from "./index.styles";
 function Main() {
 
@@ -51,6 +51,7 @@ function Main() {
         </div>
       </section>
       <section className="section_third">
+      {width < 991 ? <img src={laptopMobile} alt="illustration-laptop-mobile"/> : ''}
         <div className="texts">
           <h2> Free, open, simple</h2>
           <p>
