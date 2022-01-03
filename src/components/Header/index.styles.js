@@ -7,7 +7,6 @@ export const Container = styled.header`
   border-radius: 0px 0px 0px 6rem;
   background-position: 20% 53%;
   background-size: 200%;
-
   padding: 3rem 6rem 10rem;
 
   .logo_btnMobile {
@@ -33,17 +32,16 @@ export const Container = styled.header`
   nav .nav_list > li {
     margin-right: 3rem;
     position: relative;
-    color: rgba(255,255,255, .7);
+    color: rgba(255, 255, 255, 0.7);
     display: inline-block;
   }
- nav .nav_list > li:hover {
-   cursor: pointer;
-   text-decoration: underline;
-   color: rgba(255,255,255, 1);
+  nav .nav_list > li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 1);
+  }
 
- }
-
-  nav .nav_list li  .dp_list a {
+  nav .nav_list li .dp_list a {
     text-decoration: none;
     color: var(--neutral-white);
     font-weight: bold;
@@ -54,7 +52,7 @@ export const Container = styled.header`
     opacity: 1;
     font-weight: bold;
   }
-  nav .nav_list li  img {
+  nav .nav_list li img {
     margin-left: 5px;
     transition: 0.2s;
   }
@@ -169,7 +167,8 @@ export const Container = styled.header`
     color: rgba(255, 122, 133, 1);
   }
   @media (max-width: 991px) {
-    background-image: url(${bgMobile}), radial-gradient(circle at 70%, #ff3d54, #ff8f70);
+    background-image: url(${bgMobile}),
+      radial-gradient(circle at 70%, #ff3d54, #ff8f70);
     background-size: 300%;
     background-position: 30% 35%;
     height: 90vh;
@@ -180,7 +179,6 @@ export const Container = styled.header`
       width: 100%;
       align-items: center;
       justify-content: space-between;
-
     }
     .logo_btnMobile button {
       display: block;
@@ -216,7 +214,7 @@ export const Container = styled.header`
       color: var(--primary-very-dark-blue);
       font-weight: bold;
     }
- 
+
     nav .nav_list li .dp_list {
       z-index: 1000;
       list-style: none;

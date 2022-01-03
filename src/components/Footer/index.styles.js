@@ -8,6 +8,7 @@ export const Container = styled.footer`
   padding: 3rem 0px;
   font-family: "Ubuntu", sans-serif;
   margin-top: 5rem;
+
   border-radius: 0px 80px 0px 0px;
 
   section {
@@ -30,18 +31,19 @@ export const Container = styled.footer`
   section div a:hover {
     text-decoration: underline;
   }
+
   @media (max-width: 991px) {
     flex-direction: column;
     text-align: center;
-
     align-items: center;
-  }
-  section {
-    flex-direction: column;
-    width: 100%;
-    margin-top: 5rem;
-  }
-  section div {
+
+    section {
+      flex-direction: column;
+      width: 100%;
+      margin-top: 5rem;
+    }
+    section div {
       margin-bottom: 2rem;
+    }
   }
 `;

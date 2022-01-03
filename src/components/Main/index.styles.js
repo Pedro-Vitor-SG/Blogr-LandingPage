@@ -8,7 +8,7 @@ export const Container = styled.main`
   font-family: "Overpass", sans-serif;
   color: var(--primary-very-dark-blue);
   margin-top: 3rem;
-
+  overflow-x: hidden;
   .section_first {
     background: url(${editorDesktop}) no-repeat 57vw;
     background-size: 60%;
@@ -150,35 +150,35 @@ export const Container = styled.main`
       line-height: 25px;
     }
     .section_third {
-    padding: 0rem 0px;
-    background: none;
-    background-size: none;
-    margin-top: 3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+      padding: 0rem 0px;
+      background: none;
+      background-size: none;
+      margin-top: 3rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .section_third img {
+      width: 140%;
+    }
+    .section_third div {
+      width: 100%;
+      text-align: center;
+      padding: 0px 1.3rem;
+      margin-top: 2rem;
+    }
+    .section_third div h2 {
+      font-size: 1.4rem;
+      margin-bottom: 1.5rem;
+    }
+    .section_third div p {
+      line-height: 25px;
+      font-size: 0.9rem;
+      margin-bottom: 2rem;
+      width: 100%;
+    }
   }
-  .section_third img{
-    width: 140%;
-  }
-  .section_third div {
-    width: 100%;
-    text-align: center;
-   padding: 0px 1.3rem;
-   margin-top: 2rem;
-  }
-  .section_third div h2 {
-    font-size: 1.4rem;
-    margin-bottom: 1.5rem;
-  }
-  .section_third div p {
-    line-height: 25px;
-    font-size: .9rem;
-    margin-bottom: 2rem;
-    width: 100%;
-  }
-  }
-  @media (min-width: 480px) and (max-width: 991px){
+  @media (min-width: 480px) and (max-width: 991px) {
     .section_second img {
       width: 60%;
     }
