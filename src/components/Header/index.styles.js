@@ -209,14 +209,14 @@ export const Container = styled.header`
     }
     nav .nav_list > li {
       margin: 0 0 20px 0;
-    }
-    nav .nav_list li a {
-      opacity: 1;
       color: var(--primary-very-dark-blue);
     }
-    nav .nav_list li a:hover {
+    nav .nav_list > li:hover {
       text-decoration: none;
+      color: var(--primary-very-dark-blue);
+      font-weight: bold;
     }
+ 
     nav .nav_list li .dp_list {
       z-index: 1000;
       list-style: none;
@@ -234,6 +234,7 @@ export const Container = styled.header`
     nav .nav_list li .dp_list li a {
       color: var(--primary-very-dark-blue);
       opacity: 0.8;
+      text-decoration: none;
     }
     nav.active {
       left: 8vw;
